@@ -8,6 +8,35 @@ Event-level tactical analysis of football matches using [StatsBomb open data](ht
 |--------|-------|-------------|----------------|
 | [France-Argentina2022](./France-Argentina2022/) | Argentina 3–3 France (AET) · Argentina won 4–2 on penalties | FIFA World Cup 2022 Final | 14 |
 | [France-Croatia2018](./France-Croatia2018/) | France 4–2 Croatia | FIFA World Cup 2018 Final | 24 |
+| [Spain-England2024](./Spain-England2024/) | Spain 2–1 England · Olympiastadion, Berlin | UEFA Euro 2024 Final | 25 |
+
+---
+
+### Spain vs England — UEFA Euro 2024 Final
+
+**Shot Map (xG bubbles)**
+
+![Shot Map Euro 2024](Spain-England2024/figures/shot_map.png)
+
+**Spain Pass Network**
+
+![Spain Pass Network Euro 2024](Spain-England2024/figures/pass_network_spain.png)
+
+**England Pass Network**
+
+![England Pass Network Euro 2024](Spain-England2024/figures/pass_network_england.png)
+
+**xG Timeline**
+
+![xG Timeline Euro 2024](Spain-England2024/figures/xg_timeline.png)
+
+**Match Momentum**
+
+![Momentum Euro 2024](Spain-England2024/figures/momentum.png)
+
+**Team Stats Comparison**
+
+![Team Stats Euro 2024](Spain-England2024/figures/team_stats_comparison.png)
 
 ---
 
@@ -95,9 +124,14 @@ MatchAnalysis/
 │   ├── 02_visualizations.ipynb   # render all figures
 │   ├── cache/                    # API responses + processed .pkl
 │   └── figures/                  # 14 output PNGs
-└── France-Croatia2018/
-    ├── Match_Analysis.ipynb      # single notebook: fetch + visualize
-    └── figures/                  # 24 output PNGs
+├── France-Croatia2018/
+│   ├── Match_Analysis.ipynb      # single notebook: fetch + visualize
+│   └── figures/                  # 24 output PNGs
+└── Spain-England2024/
+    ├── 01_data_pipeline.ipynb    # fetch + cache data
+    ├── 02_visualizations.ipynb   # render all figures
+    ├── cache/                    # API responses + processed .pkl
+    └── figures/                  # 25 output PNGs
 ```
 
 ## Data Source
