@@ -7,6 +7,8 @@
 # Temporary helper scripts generated during analysis
 Spain-England2024/_run_viz.py
 Spain-England2024/_run_viz2.py
+Italy-England2020/_run_viz.py
+Italy-England2020/_run_pipeline.py
 
 # Python
 __pycache__/

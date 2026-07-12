@@ -8,7 +8,32 @@ Event-level tactical analysis of football matches using [StatsBomb open data](ht
 |--------|-------|-------------|----------------|
 | [France-Argentina2022](./France-Argentina2022/) | Argentina 3–3 France (AET) · Argentina won 4–2 on penalties | FIFA World Cup 2022 Final | 14 |
 | [France-Croatia2018](./France-Croatia2018/) | France 4–2 Croatia | FIFA World Cup 2018 Final | 24 |
+| [Italy-England2020](./Italy-England2020/) | Italy 1–1 England (AET) · Italy won 3–2 on penalties · Wembley Stadium | UEFA Euro 2020 Final | 27 |
 | [Spain-England2024](./Spain-England2024/) | Spain 2–1 England · Olympiastadion, Berlin | UEFA Euro 2024 Final | 25 |
+
+---
+
+### Italy vs England — UEFA Euro 2020 Final
+
+**Shot Freeze-Frame (360 data — player positions at moment of each goal)**
+
+![Shot Freeze-Frame Euro 2020](Italy-England2020/figures/shot_freeze_frame.png)
+
+**Shot Map (xG bubbles)**
+
+![Shot Map Euro 2020](Italy-England2020/figures/shot_map.png)
+
+**xG Timeline (incl. extra time)**
+
+![xG Timeline Euro 2020](Italy-England2020/figures/xg_timeline.png)
+
+**Match Momentum (120 min)**
+
+![Momentum Euro 2020](Italy-England2020/figures/momentum.png)
+
+**Team Stats Comparison**
+
+![Team Stats Euro 2020](Italy-England2020/figures/team_stats_comparison.png)
 
 ---
 
@@ -127,6 +152,11 @@ MatchAnalysis/
 ├── France-Croatia2018/
 │   ├── Match_Analysis.ipynb      # single notebook: fetch + visualize
 │   └── figures/                  # 24 output PNGs
+├── Italy-England2020/
+│   ├── 01_data_pipeline.ipynb    # fetch + cache data (incl. 360 frames)
+│   ├── 02_visualizations.ipynb   # render all figures
+│   ├── cache/                    # API responses + processed .pkl
+│   └── figures/                  # 27 output PNGs
 └── Spain-England2024/
     ├── 01_data_pipeline.ipynb    # fetch + cache data
     ├── 02_visualizations.ipynb   # render all figures
